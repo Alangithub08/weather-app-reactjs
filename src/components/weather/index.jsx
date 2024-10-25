@@ -10,7 +10,7 @@ export default function Weather() {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=e34b4c51d8c2b7bf48d5217fe52ff79e`
+        `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=a29559f0d6c6bb5d77279830147ca21a`
       );
 
       const data = await response.json();
@@ -38,7 +38,7 @@ export default function Weather() {
   }
 
   useEffect(() => {
-    fetchWeatherData("bangalore");
+    fetchWeatherData("manila");
   }, []);
 
   console.log(weatherData);
